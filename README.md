@@ -52,6 +52,7 @@
 
 ### Key Features <a name="key-features"></a>
 - **broject-setup**
+- **add spec for user and automobile models**
 
 
 

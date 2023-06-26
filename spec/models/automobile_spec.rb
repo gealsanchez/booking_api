@@ -39,7 +39,7 @@ RSpec.describe Automobile, type: :model do
   it 'is invalid with a non-positive rate' do
     automobile = Automobile.new(rate: -1000)
     expect(automobile).not_to be_valid
-    expect(automobile.errors[:rate]).to include("must be greater than 0")
+    expect(automobile.errors[:rate]).to include('must be greater than 0')
   end
 
   it 'is invalid without a location' do
@@ -47,4 +47,4 @@ RSpec.describe Automobile, type: :model do
     expect(automobile).not_to be_valid
     expect(automobile.errors[:location]).to include("can't be blank")
   end
-end  
+end
