@@ -11,4 +11,10 @@ RSpec.describe Automobile, type: :model do
     )
     expect(automobile).to be_valid
   end
+
+  it 'is invalid without a model' do
+    automobile = Automobile.new(model: nil)
+    expect(automobile).not_to be_valid
+    expect(automobile.errors[:model]).to include("can't be blank")
+  end
 end  
