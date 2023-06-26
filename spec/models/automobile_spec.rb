@@ -23,4 +23,10 @@ RSpec.describe Automobile, type: :model do
     expect(automobile).not_to be_valid
     expect(automobile.errors[:year]).to include("can't be blank")
   end
+
+  it 'is invalid with a year greater than the current year' do
+    automobile = Automobile.new(year: Date.today.year + 1)
+    expect(automobile).not_to be_valid
+    expect(automobile.errors[:year]).to include("must be less than or equal to #{Date.today.year}")
+  end
 end  
