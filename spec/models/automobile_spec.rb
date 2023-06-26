@@ -17,4 +17,10 @@ RSpec.describe Automobile, type: :model do
     expect(automobile).not_to be_valid
     expect(automobile.errors[:model]).to include("can't be blank")
   end
+
+  it 'is invalid without a year' do
+    automobile = Automobile.new(year: nil)
+    expect(automobile).not_to be_valid
+    expect(automobile.errors[:year]).to include("can't be blank")
+  end
 end  
