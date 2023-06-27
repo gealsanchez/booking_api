@@ -52,9 +52,9 @@
 
 ### Key Features <a name="key-features"></a>
 - **broject-setup**
+- **add api controllers**
+- **add-validation-and-spec**
 - **add spec for user and automobile models**
-
-
 
 ## 💻 Getting Started <a name="getting-started"></a>
 To get a local copy up and running, follow these steps.
