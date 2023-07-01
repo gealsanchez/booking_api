@@ -2,7 +2,7 @@ class Api::V1::AutomobilesController < ApplicationController
   before_action :set_automobile, only: %i[show destroy]
 
   def index
-    @automobiles = Automobile.all
+    @automobiles = Automobile.order(created_at: :desc).all
     render json: @automobiles
   end
 
@@ -31,6 +31,6 @@ class Api::V1::AutomobilesController < ApplicationController
   end
 
   def automobile_params
-    params.require(:automobile).permit(:model, :year, :rate, :location)
+    params.require(:automobile).permit(:model, :year, :rate, :location, :photo)
   end
 end

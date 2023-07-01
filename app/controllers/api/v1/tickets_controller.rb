@@ -1,17 +1,15 @@
 class Api::V1::TicketsController < ApplicationController
-  before_action :set_ticket, only: %i[show destroy]
-
   def index
-    @tickets = current_user.tickets
-    render json: @tickets
+    @user = User.includes(tickets: { automobile: :image_attachment }).find(params[:user_id])
+    @tickets = @user.tickets
+    render json: @tickets.call(include: { automobile: { methods: :image_url } })
   end
 
-  def show
-    render json: @ticket
-  end
-
+  # POST /tickets
   def create
-    @ticket = current_user.tickets.build(ticket_params)
+    @ticket = Ticket.new(ticket_params)
+    @user = User.find(params[:user_id])
+    @ticket.user = @user
     if @ticket.save
       render json: @ticket, status: :created
     else
@@ -19,18 +17,8 @@ class Api::V1::TicketsController < ApplicationController
     end
   end
 
-  def destroy
-    @ticket.destroy
-    head :no_content
-  end
-
-  private
-
-  def set_ticket
-    @ticket = Ticket.find(params[:id])
-  end
-
+  # Only allow a list of trusted parameters through.
   def ticket_params
-    params.require(:ticket).permit(:date, :automobile_id)
+    params.require(:ticket).permit(:automobile_id, :user_id)
   end
 end

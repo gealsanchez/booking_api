@@ -15,13 +15,17 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def show
-    @user = User.find(params[:id])
-    render json: @user
+    @user = User.where(name: params[:id])
+    if @user.first
+      render json: @user.first, status: :created
+    else
+      render json: { error: 'User not found.' }, status: :not_found
+    end
   end
 
   private
 
   def user_params
-    params.require(:user).permit(:username)
+    params.require(:user).permit(:name)
   end
 end
