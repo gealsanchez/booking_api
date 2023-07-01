@@ -21,7 +21,7 @@ class Api::V1::UsersController < ApplicationController
     else
       render json: { error: 'User not found.' }, status: :not_found
     end
-  end  
+  end
 
   private
 

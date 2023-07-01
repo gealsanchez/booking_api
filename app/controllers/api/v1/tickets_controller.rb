@@ -2,7 +2,7 @@ class Api::V1::TicketsController < ApplicationController
   def index
     @user = User.includes(tickets: { automobile: :image_attachment }).find(params[:user_id])
     @tickets = @user.tickets
-    render json: @tickets.(include: { automobile: { methods: :image_url } })
+    render json: @tickets.call(include: { automobile: { methods: :image_url } })
   end
 
   # POST /tickets
@@ -16,6 +16,7 @@ class Api::V1::TicketsController < ApplicationController
       render json: @ticket.errors, status: :unprocessable_entity
     end
   end
+
   # Only allow a list of trusted parameters through.
   def ticket_params
     params.require(:ticket).permit(:automobile_id, :user_id)
