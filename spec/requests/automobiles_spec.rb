@@ -16,4 +16,18 @@ RSpec.describe 'Api::V1::Automobiles', type: :request do
       expect(response.body).to include(automobile2.model)
     end
   end
+
+  describe 'GET /api/v1/automobiles/:id' do
+    it 'returns a specific automobile' do
+      # Create test data
+      automobile = Automobile.create(model: 'Toyota', year: 2020, rate: 100, location: 'New York', photo: 'https://imgd.aeplcdn.com/370x208/n/cw/ec/130591/fronx-exterior-right-front-three-quarter-4.jpeg?isig=0&q=75')
+
+      # Send GET request
+      get "/api/v1/automobiles/#{automobile.id}"
+
+      # Check response
+      expect(response).to have_http_status(:ok)
+      expect(response.body).to include(automobile.model)
+    end
+  end
 end  
