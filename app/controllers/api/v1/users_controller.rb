@@ -15,13 +15,14 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def show
-    @user = User.where(name: params[:id])
-    if @user.first
-      render json: @user.first, status: :created
+    @user = User.find_by(name: params[:id])
+    if @user
+      render json: @user, status: :ok
     else
       render json: { error: 'User not found.' }, status: :not_found
     end
   end
+  
 
   private
 
