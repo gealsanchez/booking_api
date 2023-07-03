@@ -22,9 +22,9 @@ RSpec.describe Api::V1::UsersController, type: :controller do
       let(:valid_params) { { user: { name: 'John' } } }
 
       it 'creates a new user' do
-        expect {
+        expect do
           post :create, params: valid_params
-        }.to change(User, :count).by(1)
+        end.to change(User, :count).by(1)
       end
 
       it 'returns a success response' do
@@ -37,9 +37,9 @@ RSpec.describe Api::V1::UsersController, type: :controller do
       let(:invalid_params) { { user: { name: '' } } }
 
       it 'does not create a new user' do
-        expect {
+        expect do
           post :create, params: invalid_params
-        }.to_not change(User, :count)
+        end.to_not change(User, :count)
       end
 
       it 'returns an unprocessable entity response' do

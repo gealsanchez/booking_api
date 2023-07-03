@@ -60,4 +60,4 @@ RSpec.describe 'Api::V1::Automobiles', type: :request do
       expect(automobile.photo).to eq(automobile_params[:automobile][:photo])
     end
   end
-end  
+end
