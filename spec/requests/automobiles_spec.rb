@@ -30,4 +30,34 @@ RSpec.describe 'Api::V1::Automobiles', type: :request do
       expect(response.body).to include(automobile.model)
     end
   end
+
+  describe 'POST /api/v1/automobiles' do
+    it 'creates a new automobile' do
+      # Parameters for the new automobile
+      automobile_params = {
+        automobile: {
+          model: 'Toyota',
+          year: 2022,
+          rate: 120,
+          location: 'Chicago',
+          photo: 'https://cdni.autocarindia.com/utils/imageresizer.ashx?n=https://cms.haymarketindia.net/model/uploads/modelimages/Hyundai-Grand-i10-Nios-200120231541.jpg&w=872&h=578&q=75&c=1'
+        }
+      }
+
+      # Send POST request
+      post '/api/v1/automobiles', params: automobile_params
+
+      # Check response
+      expect(response).to have_http_status(:created)
+      expect(response.body).to include(automobile_params[:automobile][:model])
+
+      # Check if the automobile was actually created in the database
+      automobile = Automobile.last
+      expect(automobile.model).to eq(automobile_params[:automobile][:model])
+      expect(automobile.year).to eq(automobile_params[:automobile][:year])
+      expect(automobile.rate).to eq(automobile_params[:automobile][:rate])
+      expect(automobile.location).to eq(automobile_params[:automobile][:location])
+      expect(automobile.photo).to eq(automobile_params[:automobile][:photo])
+    end
+  end
 end  
