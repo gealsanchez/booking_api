@@ -1,30 +1,32 @@
-<a name="readme-top"></a>
-
 # 📗 Table of Contents
 
-- [📗 Table of Contents](#-table-of-contents)
-- [📖 booking_api ](#-booking_api-)
-  - [🛠 Built With ](#-built-with-)
-    - [Tech Stack ](#tech-stack-)
-    - [Key Features ](#key-features-)
-  - [💻 Getting Started ](#-getting-started-)
-    - [Prerequisites](#prerequisites)
-    - [Setup](#setup)
-    - [Install](#install)
-    - [Usage](#usage)
-    - [Run tests](#run-tests)
-    - [Deployment](#deployment)
-  - [👥 Authors ](#-authors-)
-  - [🔭 Future Features ](#-future-features-)
-  - [🤝 Contributing ](#-contributing-)
-  - [⭐️ Show your support ](#️-show-your-support-)
-  - [🙏 Acknowledgments ](#-acknowledgments-)
-  - [❓ FAQ ](#-faq-)
-  - [📝 License ](#-license-)
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
 
-# 📖 booking_api <a name="about-project"></a>
+# 📖 [BOOKING API] <a name="about-project"></a>
 
-**booking_api** is ror api ready for react front end for the service of booking cars
+**[Booking api]** is a front end app to book an automobile. The user can view the cars and their details and add more automobiles. It uses a back end.
+[Link to the back-end](git@github.com:gealsanchez/booking_api.git)
+
+Front-end deployed website: https://wondrous-beijinho-ac8d57.netlify.app/
+Back-end deployed API: https://bookingapi-mstz.onrender.com/api/v1/automobiles --- /users
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -32,102 +34,89 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://www.ruby-lang.org/en/documentation/">Ruby on Rails</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://guides.rubyonrails.org/index.html">Ruby on Rails</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+    <li><a href="https://reactjs.org/">React.js</a></li>
   </ul>
 </details>
 
 ### Key Features <a name="key-features"></a>
-- **broject-setup**
-- **add api controllers**
-- **add-validation-and-spec**
-- **add spec for user and automobile models**
+
+- **[add_automobile]**
+- **[delete_automobile]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- Front-end deployed website: [Live Demo](https://wondrous-beijinho-ac8d57.netlify.app/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
+
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
 In order to run this project you need:
-- Git SCM
-- Ruby installed
-- Rails installed
+
+- [React](https://reactjs.org/) installed and running. To get more information, read the [installation guide](https://react.dev/reference/react).
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-git clone https://github.com/fithamlak/booking_api.git
-
-
-Or download the ZIP folder.
+```sh
+  cd my-folder
+  git clone git@github.com:gealsanchez/booking_api.git
+```
 
 ### Install
-```
-bundle install
-rails db:create
-rails db:migrate
-```
 
-And this should open the directory with all the files from the repository on the command line, to open it in your explorer if you're using windows you can run:
+Install this project with:
 
-```
-explorer .
+```sh
+  cd booking_api
+  npm install
 ```
 
 ### Usage
-To run the project, if you are on the blogify folder path on your terminal you can execute the following command:
 
-```
-code .
-```
+To run the project, execute the following command:
 
-This will open Visual Studio Code on the folder you're at.
-
-open terminal and run
-
-```
-  rails server
+```sh
+  npm start
 ```
 
 ### Run tests
- To start tests run:
- 
-```
-rspec spec
+
+To run tests, run the following command:
+
+```sh
+  npm test
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Authors <a name="authors"></a>
 
+👤 **Fithamlak Fikrie**
+
 - GitHub: [@fithamlak](https://github.com/fithamlak)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/fithamlak-fikrie)
+- LinkedIn: [Fithamlak Fikrie](https://www.linkedin.com/in/fithamlak-fikrie)
 
-👤  **Gerson**
+👤 **Gerson SANCHEZ**
 
-- Github [@gerson](https://github.com/gealsanchez)
+- GitHub: [@githubhandle](https://github.com/gealsanchez)
+- Twitter: [@twitterhandle](https://twitter.com/gealsanchez)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/gerson-sanchez-88309b57/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **Users will be able to share videos of the recipe**
-- **Follow users**
-- **Add chat functionality**
+- [ ] **[Improve_style]**
+- [ ] **[Add_tickets_feature]**
+- [ ] **[Add_categories]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -135,27 +124,30 @@ rspec spec
 
 Contributions, issues, and feature requests are welcome!
 
+Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- SUPPORT -->
-
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project you can just cheer me up with a comment 🙂!
+If you like this project give a star.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Special thanks to my partner.
+The design was provided by [Murat Korkmaz](https://www.behance.net/muratk) on Behance.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [Creative Commons license of the design ](https://creativecommons.org/licenses/by-nc/4.0/legalcode) licensed.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 📝 Kanban Board <a name="kanban"></a>
+
+- This is the link to our [Kanban board](https://github.com/gealsanchez/booking_api/projects/1)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
