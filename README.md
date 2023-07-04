@@ -32,9 +32,9 @@ Back-end deployed API: https://bookingapi-mstz.onrender.com/api/v1/automobiles -
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
-  <summary>Client</summary>
+<summary>Database</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
   </ul>
 </details>
 
@@ -59,7 +59,9 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-- [React](https://reactjs.org/) installed and running. To get more information, read the [installation guide](https://react.dev/reference/react).
+- [Ruby on Rails](https://rubyonrails.org/) installed and running. To get more information, read the [installation guide](https://guides.rubyonrails.org/).
+
+- [PostgreSQL](https://www.postgresql.org/) installed and running
 
 ### Setup
 
@@ -76,7 +78,7 @@ Install this project with:
 
 ```sh
   cd booking_api
-  npm install
+  bundle install
 ```
 
 ### Usage
@@ -84,7 +86,7 @@ Install this project with:
 To run the project, execute the following command:
 
 ```sh
-  npm start
+  rails s
 ```
 
 ### Run tests
@@ -92,7 +94,7 @@ To run the project, execute the following command:
 To run tests, run the following command:
 
 ```sh
-  npm test
+  rspec spec/*
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
