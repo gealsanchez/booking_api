@@ -41,7 +41,7 @@ Back-end deployed API: https://bookingapi-mstz.onrender.com/api/v1/automobiles -
 ### Key Features <a name="key-features"></a>
 
 - **[add_automobile]**
-- **[delete_automobile]**
+- **[See_details of automobile]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
