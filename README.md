@@ -1,3 +1,11 @@
+ ## Kanban board
+ - [Kanban board Project link](https://github.com/gealsanchez/booking_api/projects/1)
+ 
+ ### Initial State of Kanban board
+![kanban](https://github.com/gealsanchez/booking_api/assets/94255143/9b24b54d-71b2-47c4-a3f5-b3c1f1942602)
+
+ Our group remained the same of 2 team members throughout the whole project.
+
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -145,11 +153,5 @@ The design was provided by [Murat Korkmaz](https://www.behance.net/muratk) on Be
 ## 📝 License <a name="license"></a>
 
 This project is [Creative Commons license of the design ](https://creativecommons.org/licenses/by-nc/4.0/legalcode) licensed.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 📝 Kanban Board <a name="kanban"></a>
-
-- This is the link to our [Kanban board](https://github.com/gealsanchez/booking_api/projects/1)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
