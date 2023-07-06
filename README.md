@@ -151,6 +151,6 @@ This project is [Creative Commons license of the design ](https://creativecommon
 ## 📝 Kanban Board <a name="kanban"></a>
 
 - This is the link to our [Kanban board](https://github.com/gealsanchez/booking_api/projects/1)
-- A link to the screenshot of the initial state of our Kanban board [intial state](https://user-images.githubusercontent.com/49729863/247973510-40e065a5-d21e-478c-b72b-34d953baf37f.PNG) [Or in the pull request of assignantiom](https://github.com/gealsanchez/booking_api/issues/12)
+- A link to the screenshot of the initial state of our Kanban board [intial state](https://user-images.githubusercontent.com/49729863/247973510-40e065a5-d21e-478c-b72b-34d953baf37f.PNG) Or [in the pull request of first day Task assignantiom](https://github.com/gealsanchez/booking_api/issues/12)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
