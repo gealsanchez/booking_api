@@ -24,7 +24,7 @@
 **[Booking api]** is a front end app to book an automobile. The user can view the cars and their details and add more automobiles. It uses a back end.
 [Link to the back-end](git@github.com:gealsanchez/booking_api.git)
 
--  [Front-end repositoryu] (https://github.com/gealsanchez/booking-fronted)
+-  link for React [Front-end repository] (https://github.com/gealsanchez/booking-fronted)
 -  Front-end deployed website: https://wondrous-beijinho-ac8d57.netlify.app/
 -  Back-end deployed API: https://bookingapi-mstz.onrender.com/api/v1/automobiles --- /users
 
