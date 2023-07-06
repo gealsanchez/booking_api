@@ -1,6 +1,6 @@
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
     allow do
-      origins 'ttps://vocal-elf-856767.netlify.app' # Replace with the appropriate origin of your React app
+      origins 'https://vocal-elf-856767.netlify.app' # Replace with the appropriate origin of your React app
   
       resource '/api/*',
         headers: :any,
